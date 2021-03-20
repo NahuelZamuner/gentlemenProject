@@ -1,29 +1,134 @@
-/*Start of universal class CSS*/
+/*
+1.Posicionamiento 
+2.Modelo de caja(Ej: Medidas del box model, Margin, Padding, Etc.)
+3.Tipografia
+4.Visuales
+5.Otros
+*/
+
+:root{
+    --black-color: #191919; 
+    --gray-color: #4a4a48;
+    --white-color: #fafafa; 
+}
+
 *{
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
-    color: white;
-    background-color: #191919;
+    margin: 0;
 }
 
-.title__h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: whitesmoke;
-    font-size: 45px;
+html{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 62.5%;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    
+}
+
+@media screen and (max-width: 425px){        
+.section {
+    width: 95%;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid var(--white-color);
+    border-radius: 20px;
+}
+
+/*Section Sinopsis*/
+.section__sinopsis{
+    margin-bottom: 50px;
+}
+
+.section__title{
+    margin-bottom: 20px;
+    font-size: 3rem;
     font-weight: 300;
-    padding: 40px;
 }
 
-.a__button{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
+.section__sinopsis--description{
+    font-size: 1.3rem;
     font-weight: 100;
-    text-decoration: none;
-    padding-bottom: 3px ;
-    border-bottom: 1px solid white;
 }
 
-/*End of universal class CSS*/
+/*Section Trailer*/
+.section__trailer{
+    margin-bottom: 50px;
+}
+.section__trailer--video{
+    width: 100%;
+}
+.section__trailer--wacth{
+    display: block;
+    width: fit-content;
+    padding: 15px 0 5px 0;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+}
+
+.section__trailer--wacth:hover{
+    color: var(--gray-color);
+    border-bottom: 1px solid var(--gray-color);
+}
+
+/*Section Cast*/
+.section__cast{
+    margin-bottom: 50px;
+}
+
+.section__cast--galery{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.section__cast--card{
+    height: 300px;
+}
+
+.cast__card--name{
+    display: none;
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cast__card--description{
+        display: none;
+        margin: 10px;
+        font-size: 1.2rem;
+}
+
+.section__cast--card:hover 
+.cast__card--name {
+    display: block;
+}
+
+.section__cast--card:hover 
+.cast__card--description{
+    display: block;
+}
+
+.cast__card--portrait{
+    width: 150px;
+    height: 187px;
+    margin: 10px;
+    filter: grayscale(1);
+}
+
+.cast__card--portrait:hover{
+    transform: scale(1.2);
+    transition-duration: .3s;
+}
+
+/*Section Review*/
+
+}
+
+
+/*
 .front{
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
@@ -33,100 +138,4 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.front-logo{
-    margin: 25px;
-}
-
-.front-button__menu{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.front-button__menu img {
-    margin: 25px;
-    max-height: 40px;
-}
-
-.front-title{
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
-}
-
-.front-title__principal{
-    font-size: 70px;
-}
-
-.front-title__principal span{
-    font-size: 15px;
-    position: absolute;
-}
-
-.front-title .front-subtitle{
-    margin: 50px 0 0 200px;
-}
-
-.front-button__watch {
-    margin: auto;
-}
-
-.front-button__watch a{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 50px;
-    border-radius: 50%;
-}
-
-.front-button__more{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: auto;
-}
-
-.front-button__more a{
-    font-size: 15px;
-    text-decoration: none;
-    padding-bottom: 3px ;
-    border-bottom: 1px solid white;
-}
- 
-/* The section main start here*/
-
-main{
-  
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 1px solid white;
-    border-radius: 20px;
-    width: 80%;
-    margin: 75px auto;
-  
-}
-
-.section-sinopsis{
-    width: 300px;
-    margin-left: 250px;
-    font-size: 13px;
-}
-
-.section-trailer h2{
-    margin: 0px 0 0 250px;
-}
-
-.section-trailer video{
-    display: block;
-    width: 800px;
-    margin-left: 100px;
-}
-
-.section-trailer video:focus{
-    outline: none;
-}
-
-.section-trailer a{
-    display: block;
-    width: fit-content;
-    margin: 50px 300px;
-}
-
-
-
+*/

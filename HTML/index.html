@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,100; 0,400; 1300 & display = swap "
-      rel=" stylesheet "
-    />
+    <meta name="description" content="Mira los ultimos estrenos del cine desde donde más te guste. Quedate en casa. ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/styles.css" />
-    <title>The Gentlemen</title>
-  </head>
+    <link rel="stylesheet" href="../CSS/tablet.css" media="(min-width: 768px)"/>
+    <link rel="stylesheet" href="../CSS/desktop.css" media="(min-width: 1024px)"/>
+    <title>MIRAMAX</title>
+  </head>  
   <body>
-    <div class="front">
+    <!-- <div class="front">
       <div class="front-logo">
         <h1>MIRAMAX</h1>
       </div>
@@ -30,96 +30,81 @@
       <div class="front-button__more">
         <a href="">more info</a>
       </div>
-    </div>
-    <main>
-      <div class="section-sinopsis">
-          <h2 class="title__h2">Sinopsis</h2>
-        <p>The Gentlemen (The Gentlemen: The lords of the mafia in Spain) is a
-            2019 British crime and action film directed, written and produced by
-            Guy Ritchie, and co-written with Ivan Atkinson and Marn Davies. It
-            stars Charlie Hunnam, Henry Golding, Michelle Dockery, Colin Farrell,
-            Hugh Grant, and Matthew McConaughey.</p>
-            <br>
-        <p>Mickey Pearson is an American expat who got rich building a marijuana
+    </div> -->
+    <main class="section"> 
+      <div class="section__sinopsis">
+        <h3 class="section__title">Sinopsis</h3>
+        <p class="section__sinopsis--description">The Gentlemen (The Gentlemen: The lords of the mafia in Spain) is a
+          2019 British crime and action film directed, written and produced by
+          Guy Ritchie, and co-written with Ivan Atkinson and Marn Davies. It
+          stars Charlie Hunnam, Henry Golding, Michelle Dockery, Colin Farrell,
+          Hugh Grant, and Matthew McConaughey.</p>            
+        <br>
+        <p class="section__sinopsis--description">Mickey Pearson is an American expat who got rich building a marijuana
             empire in London. When word spreads that he is looking to get money
             out of the business, it soon unleashes a series of plots and plans
             from those who want his fortune.</p>
       </div>
-      <div class="section-trailer">
-        <h2 class="title__h2">Trailer</h2>
-        <video src="../CSS/assets/trailer.mp4" controls></video>
-        <a href="#" class="a__button">watch now</a>
+      <div class="section__trailer">
+        <h3 class="section__title">Trailer</h3>
+        <video class="section__trailer--video" src="../CSS/assets/trailer.mp4" controls></video>
+        <a href="#" class="section__trailer--wacth">watch now</a>
       </div>
+      <div class="section__cast">
+        <h3 class="section__title">Film´s cast</h3>
+        <div class="section__cast--galery">
+          <figure class="section__cast--card">
+            <img class="cast__card--portrait" src="../CSS/assets/portrait/charlie_hunnam.jpg" alt="">
+            <p class="cast__card--name">Charlie Hunnam</p>
+            <figcaption class="cast__card--description">role: Ray</figcaption>
+          </figure>
+          <figure class="section__cast--card">
+            <img class="cast__card--portrait" src="../CSS/assets/portrait/colin_farrell.jpg" alt="">
+            <p class="cast__card--name">Colin Farrell</p>
+            <figcaption class="cast__card--description">role: Coach</figcaption>
+          </figure>
+          <figure class="section__cast--card">
+            <img class="cast__card--portrait" src="../CSS/assets/portrait/eliot_summer.jpg" alt="">
+            <p class="cast__card--name">Eliot Summer</p>
+            <figcaption class="cast__card--description">role: Laura</figcaption>
+          </figure>
+          <figure class="section__cast--card">
+            <img class="cast__card--portrait" src="../CSS/assets/portrait/henry_golding.jpg" alt="">
+            <p class="cast__card--name">Henry Golding</p>
+            <figcaption class="cast__card--description">role: Dry Eye</figcaption>
+          </figure>
+          <figure class="section__cast--card">
+            <img class="cast__card--portrait" src="../CSS/assets/portrait/hugh_grant.jpg" alt="">
+            <p class="cast__card--name">Hugh Grant</p>
+            <figcaption class="cast__card--description">role: Fletcher</figcaption>
+          </figure>
+          <figure class="section__cast--card">
+            <img class="cast__card--portrait" src="../CSS/assets/portrait/jeremy_strong.jpg" alt="">
+            <p class="cast__card--name">Jeremy Strong</p>
+            <figcaption class="cast__card--description">role: Matthew</figcaption>
+          </figure>
+          <figure class="section__cast--card">
+            <img class="cast__card--portrait" src="../CSS/assets/portrait/matthew_mcconaughey.jpg" alt="">
+            <p class="cast__card--name">Matthew McConaughey</p>
+            <figcaption class="cast__card--description">role: Mickey Pearson</figcaption>
+          </figure>
+          <figure class="section__cast--card">
+            <img class="cast__card--portrait" src="../CSS/assets/portrait/michelle_dockery.jpg" alt="">
+            <p class="cast__card--name">Michelle Dockery</p>
+            <figcaption class="cast__card--description">role: Rosalind Pearson</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="section__review">
+        <h3 class="section__title">Review</h3>
+        <img class="section__review--front" src="../CSS/assets/look.jpg" alt="">
 
-      <div class="section-cast">
-        <h2>Film Cast</h2>
-        <figure>
-          <img src="" alt="" />
-          <figcaption>Role: / Mickey Pearson</figcaption>
-        </figure>
-      </div>
-      <div class="section-review">
-        <h2>Review</h2>
-        <img src="" alt="" />
-        <div class="section-review__coments">
-          <p><br /></p>
-          <p><br /></p>
-          <p><br /></p>
+        <div class="section__review--card">
+          <span class="review__card--title"></span>
+          <p class="review__card--description"></p>
+          <a href="" class="review__card--reference"></a>
         </div>
-      </div>
-      <div class="section-production">
-        <h2>Production</h2>
-        <figure>
-          <img src="" alt="" />
-          <figcaption>Personaje</figcaption>
-          <figcaption>Shot from filming</figcaption>
-        </figure>
-        <figure>
-          <img src="" alt="" />
-          <figcaption>Personaje</figcaption>
-          <figcaption>Shot from filming</figcaption>
-        </figure>
-        <figure>
-          <img src="" alt="" />
-          <figcaption>Personaje</figcaption>
-          <figcaption>Shot from filming</figcaption>
-        </figure>
-        <figure>
-          <img src="" alt="" />
-          <figcaption>Personaje</figcaption>
-          <figcaption>Shot from filming</figcaption>
-        </figure>
-        <figure>
-          <img src="" alt="" />
-          <figcaption>Personaje</figcaption>
-          <figcaption>Shot from filming</figcaption>
-        </figure>
-        <figure>
-          <img src="" alt="" />
-          <figcaption>Personaje</figcaption>
-          <figcaption>Shot from filming</figcaption>
-        </figure>
-      </div>
-      <div class="section-more">
-        <h2>More like this</h2>
-        <div class="section-more__movies">
-          <figure>
-            <img src="" alt="" />
-            <figcaption>pelicula</figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="" />
-            <figcaption>pelicula</figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="" />
-            <figcaption>pelicula</figcaption>
-          </figure>
-          <figure>
-            <img src="" alt="" />
-            <figcaption>pelicula</figcaption>
-          </figure>
-        </div>
+
       </div>
     </main>
   </body>
