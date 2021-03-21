@@ -31,8 +31,6 @@ html{
     width: 95%;
     padding: 20px;
     margin: auto;
-    border: 1px solid var(--white-color);
-    border-radius: 20px;
 }
 
 /*Section Sinopsis*/
@@ -75,7 +73,7 @@ html{
 
 /*Section Cast*/
 .section__cast{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .section__cast--galery{
@@ -125,6 +123,144 @@ html{
 
 /*Section Review*/
 
+.section__review{
+    margin-bottom: 50px;
+}
+
+.section__review--front{
+    display: none;
+}
+
+.review__card--title{
+    display: block;
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.review__card--description{
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.review__card--reference{
+    display: block;
+    width: fit-content;
+    margin: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: gray;
+    border-bottom: 1px solid gray;
+
+}
+
+/*Section More*/
+.section__more{
+    margin: 30px 0;
+}
+
+.section__production{
+    margin-bottom: 50px;
+}
+
+.production__album--info{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.production__album--reference{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.production__album--img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.production__album--description{
+    display: block;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.production__album--comment{
+    margin: 10px;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+/*Section Billboard*/
+.section-billboard{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.billboard__card--img{
+    margin: 0 10px;
+    width: 250px;
+    height: 350px;
+}
+
+.billboard__card--title{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.billboard__card--price{
+    color: gray;
+}
+
+/*Footer*/
+.footer__info{
+    padding: 30px;
+    background: #050505;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.info__links{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info__links--button{
+    font-size: 1.3rem;
+    color: var(--gray-color);
+    text-decoration: none;
+}
+
+.info__directions--sentence{
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.social__network{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+
+}
+
+.social__network--links{
+    display: block;
+    margin: 10px;
+    font-size: 1.3rem;
+    color: var(--gray-color);
+    text-decoration: none;
+}
 }
 
 
