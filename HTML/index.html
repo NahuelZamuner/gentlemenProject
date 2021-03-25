@@ -16,26 +16,28 @@
 </head>
 
 <body>
-  <!-- <div class="front">
-      <div class="front-logo">
-        <h1>MIRAMAX</h1>
+  <div class="cover__page">
+      <h1 class="cover__page--name">MIRAMAX</h1>
+      <div class="cover__page--menuContainer">
+        <img src="../CSS/assets/menu.png" alt="" id="buttonMenu" class="cover__page--menu">
+        <img src="../CSS/assets/boton-x.png" alt="" id="hiddenMenu" class="cover__page--menu cover__page--hidden">
+        <ul id="page__menu" class="page__menu  page__menuHidden">
+          <li><a class="page__menu--item" href="#sinopsis">sinopsis</a></li>
+          <li><a class="page__menu--item" href="#trailer">trailer</a></li>
+          <li><a class="page__menu--item" href="#cast">film's cast</a></li>
+          <li><a class="page__menu--item" href="#review">review</a></li>
+          <li><a class="page__menu--item" href="#production">production</a></li>
+        </ul>
       </div>
-      <div class="front-button__menu">
-        <img src="../CSS/assets/menu.png" alt="" />
+      <div class="cover__page--container">
+        <h2 class="cover__page--title">The Gentlemen</h2>
+        <p class="cover__page--description">By Guy Ritchie</p>
       </div>
-      <div class="front-title">
-        <p class="front-title__principal">The Gentlemen<span>2020</span></p>
-        <p class="front-subtitle">directed by <br />Guy Richie</p>
-      </div>
-      <div class="front-button__watch">
-        <a href="">watch</a>
-      </div>
-      <div class="front-button__more">
-        <a href="">more info</a>
-      </div>
-    </div> -->
+      <a href="#trailer" class="cover__page--button">watch</a>
+    </div>
+  </div>
   <main class="section">
-    <div class="section__sinopsis">
+    <div id="sinopsis" class="section__sinopsis">
       <h3 class="section__title">Sinopsis</h3>
       <p class="section__sinopsis--description">
         The Gentlemen (The Gentlemen: The lords of the mafia in Spain) is a
@@ -52,12 +54,12 @@
         from those who want his fortune.
       </p>
     </div>
-    <div class="section__trailer">
+    <div class="section__trailer" id="trailer">
       <h3 class="section__title">Trailer</h3>
       <video class="section__trailer--video" src="../CSS/assets/trailer.mp4" controls></video>
       <a href="#" class="section__trailer--wacth">watch now</a>
     </div>
-    <div class="section__cast">
+    <div class="section__cast" id="cast">
       <h3 class="section__title">Film´s cast</h3>
       <div class="section__cast--galery">
         <figure class="section__cast--card">
@@ -112,7 +114,7 @@
         </figure>
       </div>
     </div>
-    <div class="section__review">
+    <div class="section__review" id="review">
       <h3 class="section__title">Review</h3>
       <img class="section__review--front" src="../CSS/assets/look.jpg" alt="" />
       <div class="section__review--card">
@@ -148,7 +150,7 @@
           class="review__card--reference">read more</a>
       </div>
     </div>
-    <div class="section__production">
+    <div class="section__production" id="production">
       <h3 class="section__title">Production</h3>
       <div class="prduction__album">
         <p class="production__album--info">Photographs of the film's production. You can find wallpapers of her <a
@@ -230,8 +232,7 @@
       <a class="social__network--links" href="#">Instagram</a>
       <a class="social__network--links" href="#">YouTube</a>
     </div>
-
   </footer>
+  <script src="../JS/index.js"></script>
 </body>
-
 </html>

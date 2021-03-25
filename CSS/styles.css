@@ -26,7 +26,102 @@ html{
     
 }
 
-@media screen and (max-width: 425px){        
+@media screen and (max-width: 425px){ 
+/*Section Cover Page*/   
+.cover__page{
+    display: grid;
+    grid-template: 40% 30% 30% / 50% 50%;
+    grid-template-areas: 'one two'
+               'three three'
+               'four four';
+    height: 100vh;
+    background: linear-gradient(to top, rgba(255,255,255,0), rgba(0,0,0,0.8)), url('../CSS/assets/carrousel/img1.jpg');    
+    background-position: center;
+    background-size: cover;
+}    
+
+.cover__page--name{
+    grid-area: one;
+    margin: 15px;
+    font-size: 3rem;
+    font-family: auto;
+}
+
+.cover__page--container{
+    grid-area: three;
+    margin: auto;
+}
+
+.cover__page--title{
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.cover__page--description{
+    text-align: end;
+    font-size: 1.3rem;
+}
+
+.cover__page--button{
+    grid-area: four;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--white-color);
+    background: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    outline: none;
+}
+
+/*Side Menu*/
+.cover__page--menuContainer{
+    grid-area: two;
+    direction: rtl;
+}
+}
+.cover__page--menu{
+    margin: 15px;
+    width: 30px;
+}
+
+.page__menu{
+    margin: 0 15px;
+    list-style: none;
+    text-align: right;
+}
+
+.page__menuHidden{
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    transition: .3s ease-out;
+}
+
+.page__menu--item{
+    display: block;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-decoration: none;
+    opacity: 1;
+    transition: .3s ease-out;
+}
+
+.cover__page--hidden{
+    display: none;
+}
+
+.cover__page--menuHidden{
+    display: none;
+}
+
+/*Section*/  
 .section {
     width: 95%;
     padding: 20px;
@@ -87,26 +182,16 @@ html{
 }
 
 .cast__card--name{
-    display: none;
+    display: block;
     margin: 10px;
     font-size: 2rem;
     font-weight: 500;
 }
 
 .cast__card--description{
-        display: none;
+        display: block;
         margin: 10px;
         font-size: 1.2rem;
-}
-
-.section__cast--card:hover 
-.cast__card--name {
-    display: block;
-}
-
-.section__cast--card:hover 
-.cast__card--description{
-    display: block;
 }
 
 .cast__card--portrait{
@@ -116,13 +201,7 @@ html{
     filter: grayscale(1);
 }
 
-.cast__card--portrait:hover{
-    transform: scale(1.2);
-    transition-duration: .3s;
-}
-
 /*Section Review*/
-
 .section__review{
     margin-bottom: 50px;
 }
@@ -202,14 +281,13 @@ html{
 
 .billboard__card--img{
     margin: 0 10px;
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 300px;
 }
 
 .billboard__card--title{
     display: flex;
     justify-content: space-between;
-    width: 250px;
     margin: 0 10px;
     font-size: 1.2rem;
     font-weight: 300;
@@ -221,7 +299,7 @@ html{
 
 /*Footer*/
 .footer__info{
-    padding: 30px;
+    padding-top: 30px;
     background: #050505;
 }
 
@@ -260,18 +338,4 @@ html{
     font-size: 1.3rem;
     color: var(--gray-color);
     text-decoration: none;
-}
-}
-
-
-/*
-.front{
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    height: 100vh;
-    background: linear-gradient(to top, rgba(255,255,255,0), rgba(0,0,0,0.8)), url('../CSS/assets/portada4.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-*/
+}}
