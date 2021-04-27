@@ -107,7 +107,7 @@ html {
   /*Sinopsis*/
   .section__sinopsis {
     width: 50%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 100;
   }
 
@@ -189,7 +189,7 @@ html {
     color: var(--gray-color);
   }
   .review__card--description {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 100;
   }
   .review__card--reference {
@@ -214,12 +214,12 @@ html {
     width: 100%;
   }
   .production__album--info {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 100;
     padding: 15px 0;
   }
   .production__album--reference {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
     color: gray;
   }
@@ -256,7 +256,7 @@ html {
     display: flex;
     justify-content: space-between;
     margin: 0 10px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 100;
   }
   .billboard__card--price {
@@ -280,7 +280,7 @@ html {
   }
   .info__links--button {
     margin: 5px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--gray-color);
     text-decoration: none;
   }
@@ -289,7 +289,7 @@ html {
   }
   .info__directions--sentence {
     margin: 8px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: gray;
   }
   .social__network {
@@ -300,7 +300,7 @@ html {
   .social__network--links {
     display: block;
     margin: 10px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--gray-color);
     text-decoration: none;
   }
