@@ -79,7 +79,7 @@ html {
   }
   .page__menuHidden {
     position: absolute;
-    left: -100px;
+    left: -200px;
     opacity: 0;
     transition: 0.3s ease-out;
   }
