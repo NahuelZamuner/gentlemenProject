@@ -1,0 +1,310 @@
+/*
+1.Posicionamiento 
+2.Modelo de caja(Ej: Medidas del box model, Margin, Padding, Etc.)
+3.Tipografia
+4.Visuales
+5.Otros
+*/
+
+:root {
+  --black-color: #191919;
+  --gray-color: #4a4a48;
+  --white-color: #fafafa;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: gray;
+}
+
+@media screen and (max-width: 1440px) {
+  /*Section Cover Page*/
+  .cover__page {
+    display: grid;
+    grid-template: 10% 90% / 50% 50%;
+    grid-template-areas:
+      "name menu"
+      "title title";
+    height: 100vh;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../CSS/assets/4.jpg");
+    background-position: top;
+    background-size: cover;
+  }
+  .cover__page--name {
+    grid-area: name;
+    margin: 15px;
+    font-size: 4rem;
+    font-family: auto;
+  }
+  .cover__page--container {
+    grid-area: title;
+    margin: auto 100px;
+    font-size: 4rem;
+  }
+  .cover__page--title {
+    font-size: 8rem;
+    font-weight: 400;
+  }
+  .cover__page--description {
+    margin-left: 270px;
+    font-size: 4rem;
+    font-weight: 100;
+  }
+
+  /*Side Menu*/
+  .cover__page--menu {
+    display: none;
+  }
+  .page__menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+    list-style: none;
+    font-size: 1.7rem;
+  }
+  .page__menu--item {
+    text-decoration: none;
+    color: gray;
+  }
+  .page__menu--item:hover {
+    opacity: 0.5;
+  }
+
+  /*Section*/
+  .section {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+  }
+  .section__title {
+    padding: 50px 0;
+    font-size: 4rem;
+    font-weight: 100;
+  }
+
+  /*Sinopsis*/
+  .section__sinopsis {
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+
+  /*Trailer*/
+  .section__trailer--video {
+    width: 80%;
+  }
+  .section__trailer--wacth {
+    display: block;
+    margin-top: 50px;
+    font-size: 1.6rem;
+    color: gray;
+  }
+  .section__trailer--wacth:hover {
+    width: fit-content;
+    opacity: 0.5;
+  }
+
+  /*Section Cast*/
+  .section__cast--galery {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    margin: auto;
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+  }
+  .cast__card--name {
+    display: block;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  .cast__card--description {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  .cast__card--portrait {
+    width: 180px;
+    height: 230px;
+    margin: 10px;
+    filter: grayscale(1);
+  }
+
+  /*Section Review*/
+  .section__review {
+    display: grid;
+    grid-template: 20% 60% 20% / repeat(3, 1fr);
+    grid-template-areas:
+      "reviewTitle reviewTitle reviewTitle"
+      "reviewImg reviewImg reviewImg"
+      "reviewOne reviewTwo reviewThree";
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .section__review--front {
+    grid-area: reviewImg;
+    width: 70%;
+  }
+  .section__review--card {
+    width: 80%;
+    padding: 15px;
+  }
+  .section__review--card:nth-child(1n) {
+    grid-area: reviewOne;
+  }
+  .section__review--card:nth-child(2n) {
+    grid-area: reviewTwo;
+  }
+  .section__review--card:nth-child(3n) {
+    grid-area: reviewThree;
+  }
+  .review__card--title {
+    grid-area: reviewTitle;
+    display: block;
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--gray-color);
+  }
+  .review__card--description {
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+  .review__card--reference {
+    display: block;
+    width: fit-content;
+    margin: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: gray;
+    border-bottom: 1px solid gray;
+  }
+  .review__card--reference:hover {
+    opacity: 0.5;
+  }
+
+  /*Section Production*/
+  .production__album--card {
+    width: 50%;
+    padding: 5px;
+  }
+  .production__album--img {
+    width: 100%;
+  }
+  .production__album--info {
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 15px 0;
+  }
+  .production__album--reference {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: gray;
+  }
+  .production__album--reference:hover {
+    opacity: 0.5;
+  }
+  .production__album--description {
+    display: block;
+    margin: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .production__album--comment {
+    margin: 10px;
+    font-size: 1.2rem;
+    color: gray;
+  }
+
+  /*Section Billboard*/
+  .section__more {
+    padding-bottom: 50px;
+  }
+  .section-billboard {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+  }
+  .billboard__card--img {
+    margin: 0 10px;
+    width: 200px;
+    height: 300px;
+  }
+  .billboard__card--title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+  .billboard__card--price {
+    color: gray;
+  }
+
+  /*Footer*/
+  .footer__info {
+    display: flex;
+    padding: 30px;
+    background: #050505;
+  }
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+  }
+  .info__links {
+    display: flex;
+    flex-direction: column;
+  }
+  .info__links--button {
+    margin: 5px;
+    font-size: 1.4rem;
+    color: var(--gray-color);
+    text-decoration: none;
+  }
+  .info__links--button:hover {
+    opacity: 0.5;
+  }
+  .info__directions--sentence {
+    margin: 8px;
+    font-size: 1.4rem;
+    color: gray;
+  }
+  .social__network {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+  }
+  .social__network--links {
+    display: block;
+    margin: 10px;
+    font-size: 1.4rem;
+    color: var(--gray-color);
+    text-decoration: none;
+  }
+  .social__network--links:hover {
+    opacity: 0.5;
+  }
+}

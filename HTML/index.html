@@ -5,37 +5,40 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mira los ultimos estrenos del cine desde donde más te guste. Quedate en casa. " />
+  <meta name="description" content="Watch the latest movie releases from wherever you like. Stay at home." />
+  <meta property="og:title" content="MIRAMAX">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:img" content="../CSS/assets/look1.jpg">
+  <meta property="og:description" content="Watch the latest movie releases from wherever you like. Stay at home." />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Quicksand:wght@300;400;500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="../CSS/styles.css" />
-  <link rel="stylesheet" href="../CSS/tablet.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="../CSS/styles.css" media="(min-width: 320px)"/>
   <link rel="stylesheet" href="../CSS/desktop.css" media="(min-width: 1024px)" />
-  <title>MIRAMAX</title>
+  <title>MIRAMAX</title> 
 </head>
 
 <body>
-  <div class="cover__page">
-      <h1 class="cover__page--name">MIRAMAX</h1>
-      <div class="cover__page--menuContainer">
-        <img src="../CSS/assets/menu.png" alt="" id="buttonMenu" class="cover__page--menu">
-        <img src="../CSS/assets/boton-x.png" alt="" id="hiddenMenu" class="cover__page--menu cover__page--hidden">
+  <header class="cover__page" id="coverPage">
+    <h1 class="cover__page--name">MIRAMAX</h1>
+    <navbar class="cover__page--menuContainer">
+      <img src="../CSS/assets/menu.png" alt="" id="buttonMenu" class="cover__page--menu">
+      <img src="../CSS/assets/boton-x.png" alt="" id="hiddenMenu" class="cover__page--menu cover__page--hidden">
         <ul id="page__menu" class="page__menu  page__menuHidden">
           <li><a class="page__menu--item" href="#sinopsis">sinopsis</a></li>
           <li><a class="page__menu--item" href="#trailer">trailer</a></li>
           <li><a class="page__menu--item" href="#cast">film's cast</a></li>
           <li><a class="page__menu--item" href="#review">review</a></li>
           <li><a class="page__menu--item" href="#production">production</a></li>
-        </ul>
-      </div>
-      <div class="cover__page--container">
-        <h2 class="cover__page--title">The Gentlemen</h2>
-        <p class="cover__page--description">By Guy Ritchie</p>
-      </div>
-      <a href="#trailer" class="cover__page--button">watch</a>
+        </ul>        
+    </navbar>
+    <div class="cover__page--container">
+      <h2 class="cover__page--title">The Gentlemen</h2>
+      <p class="cover__page--description">By Guy Ritchie</p>
     </div>
-  </div>
+  </header>
+ 
   <main class="section">
     <div id="sinopsis" class="section__sinopsis">
       <h3 class="section__title">Sinopsis</h3>
@@ -63,50 +66,50 @@
       <h3 class="section__title">Film´s cast</h3>
       <div class="section__cast--galery">
         <figure class="section__cast--card">
-          <img class="cast__card--portrait" src="../CSS/assets/portrait/charlie_hunnam.jpg" alt="" />
+          <img class="cast__card--portrait" src="../CSS/assets/portrait/charlie_hunnam.jpg" alt="Charlie Hunnam photo" />
           <p class="cast__card--name">Charlie Hunnam</p>
           <figcaption class="cast__card--description">role: Ray</figcaption>
         </figure>
         <figure class="section__cast--card">
-          <img class="cast__card--portrait" src="../CSS/assets/portrait/colin_farrell.jpg" alt="" />
+          <img class="cast__card--portrait" src="../CSS/assets/portrait/colin_farrell.jpg" alt="Colin Farrell photo" />
           <p class="cast__card--name">Colin Farrell</p>
           <figcaption class="cast__card--description">role: Coach</figcaption>
         </figure>
         <figure class="section__cast--card">
-          <img class="cast__card--portrait" src="../CSS/assets/portrait/eliot_summer.jpg" alt="" />
+          <img class="cast__card--portrait" src="../CSS/assets/portrait/eliot_summer.jpg" alt="Eliot Summer photo" />
           <p class="cast__card--name">Eliot Summer</p>
           <figcaption class="cast__card--description">role: Laura</figcaption>
         </figure>
         <figure class="section__cast--card">
-          <img class="cast__card--portrait" src="../CSS/assets/portrait/henry_golding.jpg" alt="" />
+          <img class="cast__card--portrait" src="../CSS/assets/portrait/henry_golding.jpg" alt="Henry Golding photo" />
           <p class="cast__card--name">Henry Golding</p>
           <figcaption class="cast__card--description">
             role: Dry Eye
           </figcaption>
         </figure>
         <figure class="section__cast--card">
-          <img class="cast__card--portrait" src="../CSS/assets/portrait/hugh_grant.jpg" alt="" />
+          <img class="cast__card--portrait" src="../CSS/assets/portrait/hugh_grant.jpg" alt="Hugh Grant photo" />
           <p class="cast__card--name">Hugh Grant</p>
           <figcaption class="cast__card--description">
             role: Fletcher
           </figcaption>
         </figure>
         <figure class="section__cast--card">
-          <img class="cast__card--portrait" src="../CSS/assets/portrait/jeremy_strong.jpg" alt="" />
+          <img class="cast__card--portrait" src="../CSS/assets/portrait/jeremy_strong.jpg" alt="Jeremy Strong photo" />
           <p class="cast__card--name">Jeremy Strong</p>
           <figcaption class="cast__card--description">
             role: Matthew
           </figcaption>
         </figure>
         <figure class="section__cast--card">
-          <img class="cast__card--portrait" src="../CSS/assets/portrait/matthew_mcconaughey.jpg" alt="" />
+          <img class="cast__card--portrait" src="../CSS/assets/portrait/matthew_mcconaughey.jpg" alt="Matthew McConaughey photo" />
           <p class="cast__card--name">Matthew McConaughey</p>
           <figcaption class="cast__card--description">
             role: Mickey Pearson
           </figcaption>
         </figure>
         <figure class="section__cast--card">
-          <img class="cast__card--portrait" src="../CSS/assets/portrait/michelle_dockery.jpg" alt="" />
+          <img class="cast__card--portrait" src="../CSS/assets/portrait/michelle_dockery.jpg" alt="Michelle Dockery photo" />
           <p class="cast__card--name">Michelle Dockery</p>
           <figcaption class="cast__card--description">
             role: Rosalind Pearson
@@ -116,7 +119,7 @@
     </div>
     <div class="section__review" id="review">
       <h3 class="section__title">Review</h3>
-      <img class="section__review--front" src="../CSS/assets/look.jpg" alt="" />
+      <img class="section__review--front" src="../CSS/assets/look1.jpg" alt="Mickey Pearson drinking tea" />
       <div class="section__review--card">
         <span class="review__card--title">The Guardian</span>
         <p class="review__card--description">
@@ -152,37 +155,37 @@
     </div>
     <div class="section__production" id="production">
       <h3 class="section__title">Production</h3>
-      <div class="prduction__album">
+      <div class="production__album">
         <p class="production__album--info">Photographs of the film's production. You can find wallpapers of her <a
             class="production__album--reference" href="#">here.</a></p>
         <figure class="production__album--card">
-          <img class="production__album--img" src="../CSS/assets/production/fletcher.jpg" alt="">
-          <p class="production__album--description">Fletcher with ray </p>
+          <img class="production__album--img" src="../CSS/assets/production/fletcher.jpg" alt="Fletcher with ray photo">
+          <p class="production__album--description">Fletcher with ray</p>
           <figcaption class="production__album--comment">/Shot from filming</figcaption>
         </figure>
         <figure class="production__album--card">
-          <img class="production__album--img" src="../CSS/assets/production/coach.jpg" alt="">
+          <img class="production__album--img" src="../CSS/assets/production/coach.jpg" alt="Coach photo">
           <p class="production__album--description">Coach</p>
           <figcaption class="production__album--comment">/Shot from filming</figcaption>
         </figure>
         <figure class="production__album--card">
-          <img class="production__album--img" src="../CSS/assets/production/guy-ray-mickey.jpg" alt="">
+          <img class="production__album--img" src="../CSS/assets/production/guy-ray-mickey.jpg" alt="Guy with Mickey and Ray photo">
           <p class="production__album--description">Guy with Mickey and Ray</p>
           <figcaption class="production__album--comment">/Shot from filming</figcaption>
         </figure>
         <figure class="production__album--card">
-          <img class="production__album--img" src="../CSS/assets/production/matthew.jpg" alt="">
+          <img class="production__album--img" src="../CSS/assets/production/matthew.jpg" alt="Matthew photo">
           <p class="production__album--description">Matthew</p>
           <figcaption class="production__album--comment">/Shot from filming</figcaption>
         </figure>
         <figure class="production__album--card">
-          <img class="production__album--img" src="../CSS/assets/production/mickey.jpg" alt="">
+          <img class="production__album--img" src="../CSS/assets/production/mickey.jpg" alt="Mickey photo">
           <p class="production__album--description">Mickey</p>
           <figcaption class="production__album--comment">/Shot from filming</figcaption>
         </figure>
         <figure class="production__album--card">
-          <img class="production__album--img" src="../CSS/assets/production/ray.jpg" alt="">
-          <p class="production__album--description">Ray </p>
+          <img class="production__album--img" src="../CSS/assets/production/ray.jpg" alt="Ray photo">
+          <p class="production__album--description">Ray</p>
           <figcaption class="production__album--comment">/Shot from filming</figcaption>
         </figure>
       </div>
@@ -191,22 +194,22 @@
       <h3 class="section__title">More like this</h3>
       <div class="section-billboard">
         <figure class="billboard__card">
-          <img class="billboard__card--img" src="../CSS/assets/billboard/scarymovie.jpg" alt="">
+          <img class="billboard__card--img" src="../CSS/assets/billboard/scarymovie.jpg" alt="Scary Movie poster">
           <figcaption class="billboard__card--title">Scary Movie<span class="billboard__card--price">3 USD</span>
           </figcaption>
         </figure>
         <figure class="billboard__card">
-          <img class="billboard__card--img" src="../CSS/assets/billboard/hallowen.jpg" alt="">
+          <img class="billboard__card--img" src="../CSS/assets/billboard/hallowen.jpg" alt="Hallowen movie poster">
           <figcaption class="billboard__card--title">Hallowen<span class="billboard__card--price">3 USD</span>
           </figcaption>
         </figure>
         <figure class="billboard__card">
-          <img class="billboard__card--img" src="../CSS/assets/billboard/queen.jpg" alt="">
+          <img class="billboard__card--img" src="../CSS/assets/billboard/queen.jpg" alt="The Queen movie poster">
           <figcaption class="billboard__card--title">The Queen<span class="billboard__card--price">3 USD</span>
           </figcaption>
         </figure>
         <figure class="billboard__card">
-          <img class="billboard__card--img" src="../CSS/assets/billboard/willhunting.jpg" alt="">
+          <img class="billboard__card--img" src="../CSS/assets/billboard/willhunting.jpg" alt="Good Will Hunting movie poster">
           <figcaption class="billboard__card--title">Good Will Hunting<span class="billboard__card--price">3 USD</span>
           </figcaption>
         </figure>

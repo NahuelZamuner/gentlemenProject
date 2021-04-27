@@ -9,11 +9,10 @@ $buttonMenu.addEventListener('click', () => {
     $pageMenu.classList.add('page__menu--item')
 })
 
-
 $hiddenMenu.addEventListener('click', () => {
   $hiddenMenu.classList.add('cover__page--hidden')
   $buttonMenu.classList.remove('cover__page--menuHidden')
   $pageMenu.classList.add('page__menuHidden')
   $pageMenu.classList.remove('page__menu--item')
-
 })
+
