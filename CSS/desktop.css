@@ -33,7 +33,7 @@ html {
   background-color: gray;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 2560px) {
   /*Section Cover Page*/
   .cover__page {
     display: grid;
